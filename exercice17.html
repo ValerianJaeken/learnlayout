@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Exo 17</title>
+  <style>
+  .container{
+    display: -webkit-flex;
+    display: flex;
+    border: solid red 5px;
+  }
+  .first{
+    -webkit-flex: initial;
+            flex: initial;
+    width: 200px;
+    min-width: 100px;
+    border: solid darkgreen 5px;
+  }
+  .rock{
+    -webkit-flex: none;
+    flex:none;
+    width:200px;
+    border: solid orange 5px;
+  }
+  .flex{
+    -webkit-flex:1;
+    flex:1;
+    border: solid teal 5px;
+  }
+  .flexiglass{
+    -webkit-flex:2;
+    flex:2;
+    border: solid purple 5px;
+  }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="first">
+    This text should be 200px if it has the space for it and can shrink down to 100px minimum.
+  </div>
+  <div class="rock">
+    This text will remain at 200px, it doesn't give a fudge.
+  </div>
+  <div class="flex">
+    This text should fill up 1/3 of the remaining width of whatever width there is, by the way this word is really hard to pronounce!
+  </div>
+  <div class="flexiglass">
+    This text should fill up 2/3 of the remaining width of whatever width there is, this word is still hard as hell to pronounce!
+  </div>
+</div>
+</body>
+</html>
